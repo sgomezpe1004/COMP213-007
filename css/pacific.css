@@ -1,16 +1,14 @@
 *{
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
 body{
     background-color:#88D8ED;
-    
     color:#666666;
     font-family:Arial, Helvetica, sans-serif;
 }
 
 header{
-    background:url(../images/sunset.jpg) no-repeat right;
     background-color:#000033;
     color:#FFFFFF;
     height:120px;
@@ -26,34 +24,36 @@ h1,h2,h3{
 h1{
     margin-top:0px;
     margin-bottom:0px;
-    font-size: 300%;
-    letter-spacing:0.1em;
+    font-size:300%;
+    letter-spacing:0.25em;
 }
 
-nav, main{
-    display: inline-block;
+nav,main{
+    display:inline-block;
     vertical-align: top;
 }
 
 nav {
-    
     font-weight:bold;
-    font-size: 120%;
     padding:1.5em;
+    font-size:120%;
     width:30%;
 }
+
 nav ul{
     list-style-type: none;
-    padding-left: 0px;
+    padding-left:0px;
     font-size:120%;
 }
 
 nav a:link{
     color:#5C7FA3;
 }
+
 nav a:visited{
     color:#344873;
 }
+
 nav a:hover{
     color:#A52A2A;
 }
@@ -66,21 +66,20 @@ h2{
     text-shadow: 2px 2px #CCCCCC;
 }
 
-
-ul{
+main ul{
     list-style-image: url(../images/marker.gif);
 }
 
 main{
-    padding:1px 20px 20px;
     background-color: #FFFFFF;
-    width: 70%;
+    padding:1px 20px 20px;
+    width:70%;
 }
 
 footer{
+    background-color: #FFFFFF;
     font-size:75%;
     padding:20px;
-    background-color: #FFFFFF;
 }
 
 table, th, td{
@@ -160,45 +159,45 @@ input,textarea{
     display:none;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width:1024px) {
     body{
         margin:0px;
-        background-color: #FFFFFF;
+        background-color:#FFFFFF;
     }
     #wrapper{
-        min-width: px;
+        min-width:0px;
         width:auto;
         box-shadow:none;
         border:none;
     }
     header{
-        padding: 0.5em 0em;
+        padding:0.5em 0em;
     }
     h1{
         letter-spacing:0.1em;
     }
     nav,main{
         display:block;
-        width:100%;
+        width:auto;
     }
     nav{
         text-align: center;
-        padding:0.5em
+        padding:0.5em;
     }
-    nav li{
-        display: inline;
+    nav li {
+        display:inline;
         padding:0.25em 0.75em;
     }
-    #homehero, #yurthero, #trailhero{
+    #homehero,#yurthero,#trailhero{
         height:200px;
         background-position: center;
     }
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:600px) {
     main{
         padding:0.1em 1em;
-        font-size: 90%;
+        font-size:90%;
     }
     h1{
         font-size:2em;
@@ -207,16 +206,24 @@ input,textarea{
         padding:0px;
     }
     nav li{
-        display: block;
+        display:block;
         margin:0px;
-        border-bottom: 2px solid #330000;
+        border-bottom:2px solid #330000;
+        padding:0px;
     }
     ul{
         margin:0px;
     }
-    nav a{
-        display: block;
+    nav a {
+        display:block;
     }
-
+    #homehero,#yurthero,#trailhero{
+        display:none;
+    }
+    #mobile{
+        display:inline;
+    }
+    #desktop{
+        display:none;
+    }
 }
-
